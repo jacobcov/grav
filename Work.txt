@@ -1,0 +1,47 @@
+"Gee" by Girls Generation
+
+132 minutes - First Class
+131 minutes - Days of Future
+
+Tuesday May 17 -- Worked from 10:05 - 11:35 | 11:42 - 12:30 | 2:35-3:00 ~ 2.72 hrs
+-Installed appropriate libraries for Ubuntu
+-Verified Boost libraries installed 
+-started installing rappture
+-Errors trying to run the test program of rappture
+
+Wednesday May 18 -- Worked from 10:28 - 10:38 | 11:43 - 12:20 | 1:10 - 3:10  ~ 2.78 hrs
+-Had to go back to apartment to retrieve information for work
+-Got help from Meyer on fixing error. Got Rappture working
+-could not get rappture to assign permanent path, decided to try later
+-began looking through files for the equilibrium program
+-Got permanent alias for rappture, so now I can just call "rappture" and get the program
+
+Thursday May 19 -- Worked from 10:50 - 12:03 | 1:00 - 5:00 ~ 5.22 hrs
+-Looking through equilibrium files to try to understand what the code means
+-Decided to start working on some test programs for rappture
+-Created tool.xml for grav program
+-Started working on grav.tcl for grav program
+
+Friday May 20 -- Worked from 10:15 - 11:20 | 12:19 - 4:35
+-Attempt to fix errors in grav.tcl when run in to rappture
+-Got packages to work, now I just have some programming errors
+-Need to learn more tcl to eliminate bugs
+-Can get program to compile, but now either get different errors or improper output
+
+Total Hours for Week of May 16 = 16.07
+
+Monday May 23 4:45 - 5:25 
+-Slept in most of the day because of Sunday
+
+Tuesday May 24 10:34 - 12:35 | 1:48 - 5:28
+-Nearly have trajectory code working. Just not able to get strings from rappture to work with calculations. How to convert?
+-Got Trajectory code working in all 3 plot forms
+-Began looking at the jacob.cpp Meyer sent me to learn how to make rappture work with c++
+
+Wednesday May 25 10:58 - 1:02 | 1:40 - 5:43
+-More work with jacob.cpp
+-finished jacob.cpp with rappture
+-started figuring out github and git
+
+Thursday May 26 10:59 - 12:18 | 1:16 - 
+-
