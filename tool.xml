@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>Distance To Ground Under Gravity</title>
+        <about>A tool to calculate the distance travelled by a projectile under gravity in two dimensions.</about>
+        <command>tclsh @tool/grav.tcl @driver</command>
+    </tool>
+    <input>
+	<integer id='points'>
+	    <about>
+		<label>Number of Time points</label>
+		<description>Enter the number of points to calculate between the initial position and the time the projectile hits the ground </description>
+	    </about>
+	<default>10</default>
+	</integer>
+        <number id="accel">
+            <about>
+                <label>Acceleration Due to Gravity</label>
+                <description>Enter a value for the vertical acceleration on the projectile caused by gravity (in m/s^2, with downward acceleration being positive).</description>
+            </about>
+            <preset>
+		    <label>Gravity on Mercury.</label>
+                    <value> 12.15 </value>
+            </preset>
+            <preset>
+                    <value> 8.872 </value>
+                    <label>Gravity on Venus.</label>
+            </preset>
+            <preset>
+                    <value> 9.81 </value>
+                    <label>Gravity on Earth.</label>
+            </preset>
+            <preset>
+                    <value>1.625</value>
+                    <label>Gravity on Earth's Moon.</label>
+            </preset>
+            <preset>
+                    <value>3.728</value>
+		    <label>Gravity on Mars.</label>
+            </preset>
+	    <preset>
+                    <value> 25.93 </value>
+                    <label>Gravity on Jupiter.</label>
+            </preset>
+            <preset>
+                    <value> 11.19 </value>
+                    <label>Gravity on Saturn.</label>
+            </preset>
+            <default>9.81</default>
+        </number>
+        <number id="xvel">
+            <about>
+                <label>X Velocity</label>
+                <description>Initial horizontal velocity of projectile in m/s.</description>
+            </about>
+            <default>5</default>
+            <min>0</min>
+            <max>10000</max>
+        </number>
+        <number id="yvel">
+            <about>
+                <label>Y Velocity</label>
+                <description>Initial vertical velocity of projectile in m/s.</description>
+            </about>
+            <default>5</default>
+            <min>0</min>
+            <max>10000</max>
+        </number>
+        <number id="ypos">
+            <about>
+                <label>Initial height</label>
+                <description>Height from which object was thrown in meters from the ground.</description>
+            </about>
+            <default>0</default>
+            <min>0</min>
+            <max>5000</max>
+	</number>
+	</input>
+
+	<output>
+	  <curve id="ty">
+		<about>
+		  <label>Height over Time</label>
+		  <description>Change in Height of projectile over time</description>
+		</about>
+		<xaxis>
+		  <label>t</label>
+		  <description>Time</description>
+		  <units>s</units>
+		</xaxis>
+		<yaxis>
+		  <label>Y</label>
+		  <description>Height</description>
+		  <units>m</units>
+		</yaxis>
+	  </curve>	
+          <curve id="tx">
+                <about>
+                  <label>Distance over Time</label>
+                  <description>Change in Distance of projectile over time</description>    
+                </about>
+                <xaxis>
+                  <label>t</label>
+                  <description>Time</description>
+		  <units>s</units>
+		</xaxis>
+                <yaxis>
+                  <label>X</label>
+                  <description>Distance</description>
+		  <units>m</units>
+		</yaxis>
+          </curve>
+          <curve id="xy">
+                <about>
+                  <label>Trajectory</label>
+                  <description>Change in Height and Distance of projectile</description>    
+                </about>
+                <xaxis>
+                  <label>X</label>
+                  <description>Distance</description>
+		  <units>m</units>
+		</xaxis>
+                <yaxis>
+                  <label>Y</label>
+                  <description>Height</description>
+                  <units>m</units>
+		</yaxis>
+          </curve>
+	</output>
+</run>
